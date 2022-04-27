@@ -11,7 +11,7 @@ function Bulbs() {
   const lightOff = () => setOn(false);
   const lightSwitch = () => setOn(on => !on);
   const addBulbs = () => setCount(count => count + 1);
-  console.log(count);
+  //console.log(count);
   const bulb = <div className={on ? 'bulb-on' : 'bulb-off'} />;
   const bulbs = Array(count).fill(bulb);
   return (
